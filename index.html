@@ -1,7 +1,7 @@
-<html><head><base href="https://websimcreation.com/network-text-display/">
+<html><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dynamic Text Network Display</title>
+<title>␚</title>
 <style>
   body, html {
     margin: 0;
@@ -18,23 +18,19 @@
   }
   .node {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     text-align: center;
     padding: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     transition: all 0.5s ease;
   }
-  .link {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.2);
-    transform-origin: 0 0;
-  }
+
 </style>
 </head>
 <body>
@@ -63,8 +59,8 @@ function createNode(text) {
   const node = document.createElement('div');
   node.className = 'node';
   node.textContent = text;
-  node.style.left = `${Math.random() * 80 + 10}%`;
-  node.style.top = `${Math.random() * 80 + 10}%`;
+  node.style.left = `${Math.random() * 97}%`;
+  node.style.top = `${Math.random() * 97}%`;
   canvas.appendChild(node);
   return node;
 }
